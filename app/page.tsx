@@ -342,63 +342,61 @@ function ProcessSection() {
 }
 
 function StatsSection() {
-  const RocketIcon = () => (
-    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto mb-4">
-      <path d="M24 8L28 20H36L30 25L32 37L24 32L16 37L18 25L12 20H20L24 8Z" fill="#D4AF37" stroke="#D4AF37" strokeWidth="1.5" strokeLinejoin="round"/>
-      <path d="M16 32C14 34 12 35 10 36" stroke="#D4AF37" strokeWidth="2" strokeLinecap="round"/>
-      <path d="M32 32C34 34 36 35 38 36" stroke="#D4AF37" strokeWidth="2" strokeLinecap="round"/>
+  const LightningIcon = () => (
+    <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto mb-6">
+      <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z" stroke="#D4AF37" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 
   const TargetIcon = () => (
-    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto mb-4">
-      <circle cx="24" cy="24" r="20" stroke="#D4AF37" strokeWidth="2"/>
-      <circle cx="24" cy="24" r="14" stroke="#D4AF37" strokeWidth="2"/>
-      <circle cx="24" cy="24" r="8" stroke="#D4AF37" strokeWidth="2"/>
-      <circle cx="24" cy="24" r="3" fill="#D4AF37"/>
+    <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto mb-6">
+      <circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="1.5"/>
+      <circle cx="12" cy="12" r="6" stroke="#D4AF37" strokeWidth="1.5"/>
+      <circle cx="12" cy="12" r="2" stroke="#D4AF37" strokeWidth="1.5"/>
     </svg>
   );
 
-  const LightningIcon = () => (
-    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto mb-4">
-      <path d="M24 4L32 18H28L36 40L20 28H24L16 4Z" fill="#D4AF37" stroke="#D4AF37" strokeWidth="1.5" strokeLinejoin="round"/>
+  const RocketIcon = () => (
+    <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto mb-6">
+      <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" stroke="#D4AF37" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" stroke="#D4AF37" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" stroke="#D4AF37" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" stroke="#D4AF37" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 
   const GrowthIcon = () => (
-    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto mb-4">
-      <path d="M8 36L14 28L20 32L28 18L40 32" stroke="#D4AF37" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-      <circle cx="40" cy="32" r="3" fill="#D4AF37"/>
-      <path d="M36 24V32H44" stroke="#D4AF37" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto mb-6">
+      <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" stroke="#D4AF37" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 
   return (
     <section className="container mx-auto px-6 py-24">
-      <Card className="bg-gradient-to-br from-[#D4AF37]/10 via-[#FFEB3B]/10 to-[#D4AF37]/10 border-[#D4AF37]/30 p-12">
-        <div className="grid md:grid-cols-4 gap-8 text-center">
+      <div className="bg-[#1a1a1a] border border-white/10 rounded-lg p-16">
+        <div className="grid md:grid-cols-4 gap-12 text-center">
           <div>
             <LightningIcon />
-            <div className="text-4xl font-bold text-[#D4AF37] mb-2">10x</div>
-            <div className="text-white/70">Productivity Increase</div>
+            <div className="text-5xl font-bold text-[#D4AF37] mb-3">10x</div>
+            <div className="text-white/60 text-sm">Productivity Increase</div>
           </div>
           <div>
             <TargetIcon />
-            <div className="text-4xl font-bold text-[#D4AF37] mb-2">85%</div>
-            <div className="text-white/70">Cost Reduction</div>
+            <div className="text-5xl font-bold text-[#D4AF37] mb-3">85%</div>
+            <div className="text-white/60 text-sm">Cost Reduction</div>
           </div>
           <div>
             <RocketIcon />
-            <div className="text-4xl font-bold text-[#D4AF37] mb-2">2 Weeks</div>
-            <div className="text-white/70">Average Deployment</div>
+            <div className="text-5xl font-bold text-[#D4AF37] mb-3">2 Weeks</div>
+            <div className="text-white/60 text-sm">Average Deployment</div>
           </div>
           <div>
             <GrowthIcon />
-            <div className="text-4xl font-bold text-[#D4AF37] mb-2">250%</div>
-            <div className="text-white/70">ROI Average</div>
+            <div className="text-5xl font-bold text-[#D4AF37] mb-3">250%</div>
+            <div className="text-white/60 text-sm">ROI Average</div>
           </div>
         </div>
-      </Card>
+      </div>
     </section>
   );
 }
