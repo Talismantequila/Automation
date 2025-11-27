@@ -1515,6 +1515,10 @@ video {
   background-color: hsl(var(--secondary) / 0.8);
 }
 
+.hover\:bg-\[\#D4AF37\]\/5:hover {
+  background-color: rgb(212 175 55 / 0.05);
+}
+
 .hover\:from-\[\#FFEB3B\]:hover {
   --tw-gradient-from: #FFEB3B var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 235 59 / 0) var(--tw-gradient-to-position);
@@ -1550,6 +1554,12 @@ video {
 .hover\:shadow-lg:hover {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:shadow-\[0_0_30px_rgba\(212\2c 175\2c 55\2c 0\.5\)\]:hover {
+  --tw-shadow: 0 0 30px rgba(212,175,55,0.5);
+  --tw-shadow-colored: 0 0 30px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 

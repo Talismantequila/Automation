@@ -375,22 +375,22 @@ function StatsSection() {
     <section className="container mx-auto px-6 py-24">
       <div className="bg-[#1a1a1a] border border-white/10 rounded-lg p-16">
         <div className="grid md:grid-cols-4 gap-12 text-center">
-          <div>
+          <div className="group p-6 rounded-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:bg-[#D4AF37]/5">
             <LightningIcon />
             <div className="text-5xl font-bold text-[#D4AF37] mb-3">10x</div>
             <div className="text-white/60 text-sm">Productivity Increase</div>
           </div>
-          <div>
+          <div className="group p-6 rounded-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:bg-[#D4AF37]/5">
             <TargetIcon />
             <div className="text-5xl font-bold text-[#D4AF37] mb-3">85%</div>
             <div className="text-white/60 text-sm">Cost Reduction</div>
           </div>
-          <div>
+          <div className="group p-6 rounded-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:bg-[#D4AF37]/5">
             <RocketIcon />
             <div className="text-5xl font-bold text-[#D4AF37] mb-3">2 Weeks</div>
             <div className="text-white/60 text-sm">Average Deployment</div>
           </div>
-          <div>
+          <div className="group p-6 rounded-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:bg-[#D4AF37]/5">
             <GrowthIcon />
             <div className="text-5xl font-bold text-[#D4AF37] mb-3">250%</div>
             <div className="text-white/60 text-sm">ROI Average</div>
