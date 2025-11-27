@@ -342,27 +342,58 @@ function ProcessSection() {
 }
 
 function StatsSection() {
+  const RocketIcon = () => (
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto mb-4">
+      <path d="M24 8L28 20H36L30 25L32 37L24 32L16 37L18 25L12 20H20L24 8Z" fill="#D4AF37" stroke="#D4AF37" strokeWidth="1.5" strokeLinejoin="round"/>
+      <path d="M16 32C14 34 12 35 10 36" stroke="#D4AF37" strokeWidth="2" strokeLinecap="round"/>
+      <path d="M32 32C34 34 36 35 38 36" stroke="#D4AF37" strokeWidth="2" strokeLinecap="round"/>
+    </svg>
+  );
+
+  const TargetIcon = () => (
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto mb-4">
+      <circle cx="24" cy="24" r="20" stroke="#D4AF37" strokeWidth="2"/>
+      <circle cx="24" cy="24" r="14" stroke="#D4AF37" strokeWidth="2"/>
+      <circle cx="24" cy="24" r="8" stroke="#D4AF37" strokeWidth="2"/>
+      <circle cx="24" cy="24" r="3" fill="#D4AF37"/>
+    </svg>
+  );
+
+  const LightningIcon = () => (
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto mb-4">
+      <path d="M24 4L32 18H28L36 40L20 28H24L16 4Z" fill="#D4AF37" stroke="#D4AF37" strokeWidth="1.5" strokeLinejoin="round"/>
+    </svg>
+  );
+
+  const GrowthIcon = () => (
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto mb-4">
+      <path d="M8 36L14 28L20 32L28 18L40 32" stroke="#D4AF37" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <circle cx="40" cy="32" r="3" fill="#D4AF37"/>
+      <path d="M36 24V32H44" stroke="#D4AF37" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  );
+
   return (
     <section className="container mx-auto px-6 py-24">
       <Card className="bg-gradient-to-br from-[#D4AF37]/10 via-[#FFEB3B]/10 to-[#D4AF37]/10 border-[#D4AF37]/30 p-12">
         <div className="grid md:grid-cols-4 gap-8 text-center">
           <div>
-            <Zap className="w-12 h-12 text-[#D4AF37] mx-auto mb-4" />
+            <LightningIcon />
             <div className="text-4xl font-bold text-[#D4AF37] mb-2">10x</div>
             <div className="text-white/70">Productivity Increase</div>
           </div>
           <div>
-            <Target className="w-12 h-12 text-[#D4AF37] mx-auto mb-4" />
+            <TargetIcon />
             <div className="text-4xl font-bold text-[#D4AF37] mb-2">85%</div>
             <div className="text-white/70">Cost Reduction</div>
           </div>
           <div>
-            <Rocket className="w-12 h-12 text-[#D4AF37] mx-auto mb-4" />
+            <RocketIcon />
             <div className="text-4xl font-bold text-[#D4AF37] mb-2">2 Weeks</div>
             <div className="text-white/70">Average Deployment</div>
           </div>
           <div>
-            <BarChart3 className="w-12 h-12 text-[#D4AF37] mx-auto mb-4" />
+            <GrowthIcon />
             <div className="text-4xl font-bold text-[#D4AF37] mb-2">250%</div>
             <div className="text-white/70">ROI Average</div>
           </div>
