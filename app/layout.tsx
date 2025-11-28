@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'NeuralSync AI - AI Automation Agency',
-  description: 'Transform your business with cutting-edge AI automation. We build intelligent systems that work 24/7, scale infinitely, and deliver results beyond human capability.',
+  description: 'Transform your business with cutting-edge AI automation. I build intelligent systems that work 24/7, scale infinitely, and deliver results beyond human capability.',
 };
 
 export default function RootLayout({
