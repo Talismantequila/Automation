@@ -387,7 +387,7 @@ function StatsSection() {
           </div>
           <div className="group p-6 rounded-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:bg-[#D4AF37]/5">
             <RocketIcon />
-            <div className="text-5xl font-bold text-[#D4AF37] mb-3">2 Weeks</div>
+            <div className="text-5xl font-bold text-[#D4AF37] mb-3">7 days</div>
             <div className="text-white/60 text-sm">Average Deployment</div>
           </div>
           <div className="group p-6 rounded-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:bg-[#D4AF37]/5">
